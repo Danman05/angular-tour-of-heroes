@@ -1,6 +1,12 @@
 # AngularTourOfHeroes
 
+This application mostly follows the tutorial on https://angular.io/tutorial/tour-of-heroes
+
+i have added my own API that is built from ASP.Net Core Web API
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+
+
 
 ## Development server
 
