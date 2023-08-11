@@ -1,0 +1,113 @@
+/* Application-wide Styles */
+* {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+
+h2,
+h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    margin: 2em;
+}
+
+body,
+input[type="text"],
+button {
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+}
+
+button {
+    background-color: #eee;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+/* everywhere else */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heroes {
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    top: 7.5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+}
+
+img {
+    width: 100px;
+    /* Adjust this value as per your requirement */
+    height: 100px;
+    /* Adjust this value as per your requirement */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+}
+
+/* For window widths between 600px and 900px */
+@media (min-width: 600px) and (max-width: 900px) {
+    .heroes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* For window widths between 400px and 600px */
+@media (max-width: 599px) {
+    .heroes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* For window widths less than 400px */
+@media (max-width: 399px) {
+    .heroes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 199px) {
+    .heroes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

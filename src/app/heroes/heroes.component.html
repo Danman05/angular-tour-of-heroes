@@ -1,0 +1,16 @@
+<div>
+    <button class="createBtn" (click)="initNewHero()">Create a new hero</button>
+    <app-hero-detail [hero]="selectedHero" (heroesUpdated)="updateHeroList($event)"></app-hero-detail>
+    <ul class="heroes">
+        <li class="hero" *ngFor="let hero of dbHeroes">
+            <button type="button" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
+                <!-- <span class="badge">{{hero.id}}</span>
+                <span class="name">{{ hero.name}}</span> -->
+                <img src="{{ hero.imgBase64 }}">
+            </button>
+        </li>
+    </ul>
+</div>
+<div>
+</div>
+<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->

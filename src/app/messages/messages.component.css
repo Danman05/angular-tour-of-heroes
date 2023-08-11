@@ -1,0 +1,9 @@
+.messageContainer {
+    position: absolute;
+    left: 75%;
+    right: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
